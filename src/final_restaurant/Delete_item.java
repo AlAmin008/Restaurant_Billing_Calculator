@@ -54,6 +54,7 @@ public class Delete_item extends JFrame{
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setVisible(true);
             frame.setBounds(600, 150, 500,600);
+             frame.setResizable(false);
             dispose();
             }
        });
@@ -64,6 +65,7 @@ public class Delete_item extends JFrame{
               frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
               frame.setVisible(true);
              frame.setBounds(600, 150, 500,600);
+              frame.setResizable(false);
               dispose();
             }
        });
@@ -77,6 +79,7 @@ public class Delete_item extends JFrame{
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
         frame.setBounds(650, 250,380, 350); 
+         frame.setResizable(false);
     }
     
 }

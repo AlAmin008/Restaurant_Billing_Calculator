@@ -94,7 +94,7 @@ public class Bill_final extends JFrame{
               textarea[i].addKeyListener(new KeyAdapter() {
              public void keyPressed(KeyEvent ke) {
             String value = textarea[j].getText();
-            int l = value.length();
+           // int l = value.length();
             if (ke.getKeyChar() >= '0' && ke.getKeyChar() <= '9') {
                textarea[j].setEditable(true);
             } else {
@@ -152,7 +152,7 @@ public class Bill_final extends JFrame{
            subtotalarea.setBounds(700, 20, 150, 40);
            c.add(subtotalarea);
            
-           vat=new JLabel("Vat:");
+           vat=new JLabel("Vat(%):");
            vat.setFont(font);
            vat.setBounds(500,80, 100, 50);
            c.add(vat);
@@ -162,9 +162,9 @@ public class Bill_final extends JFrame{
            vatarea.setBounds(700,80, 150, 40);
            c.add(vatarea);
            
-           discount=new JLabel("Discount:");
+           discount=new JLabel("Discount(%):");
            discount.setFont(font);
-           discount.setBounds(500,140, 100, 50);
+           discount.setBounds(500,140, 150, 50);
            c.add(discount);
            discountarea=new JTextArea();
            discountarea.setFont(font);
@@ -233,6 +233,7 @@ public class Bill_final extends JFrame{
             frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
             frame.setVisible(true);
             frame.setBounds(600, 150, 500,600);
+             frame.setResizable(false);
             dispose();
             }
         });

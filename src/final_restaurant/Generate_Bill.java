@@ -53,6 +53,7 @@ public class Generate_Bill extends JFrame{
                  frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                  frame.setVisible(true);
                  frame.setBounds(600, 150, 900, 600);
+                  frame.setResizable(false);
             }
         });
         
@@ -79,5 +80,6 @@ public class Generate_Bill extends JFrame{
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
         frame.setBounds(600, 150, 500, 650);
+         frame.setResizable(false);
     }
 }

@@ -80,11 +80,14 @@ public class Add_Item extends JFrame{
        pricearea.addKeyListener(new KeyAdapter() {
          public void keyPressed(KeyEvent ke) {
             String value = pricearea.getText();
-            int l = value.length();
+           // int l = value.length();
             if (ke.getKeyChar() >= '0' && ke.getKeyChar() <= '9') {
                pricearea.setEditable(true);
             } else {
                pricearea.setEditable(false);
+            }
+             if (ke.getKeyChar() ==KeyEvent.VK_BACK_SPACE ){
+               
             }
          }
       });
@@ -97,6 +100,7 @@ public class Add_Item extends JFrame{
               frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
               frame.setVisible(true);
               frame.setBounds(600, 150, 500,600);
+               frame.setResizable(false);
               dispose();
             }
         });
@@ -107,6 +111,7 @@ public class Add_Item extends JFrame{
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
         frame.setBounds(650, 250, 450, 350);  
+         frame.setResizable(false);
     }
     
    

@@ -81,6 +81,7 @@ public class Main extends JFrame {
                     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                     frame.setVisible(true);
                     frame.setBounds(600, 150, 450, 350);
+                     frame.setResizable(false);
                      dispose();
                  }
              });
@@ -93,6 +94,7 @@ public class Main extends JFrame {
                   frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                    frame.setVisible(true);
                    frame.setBounds(600, 150,380, 350); 
+                   frame.setResizable(false);
                    dispose();
                  }
              });
@@ -105,6 +107,7 @@ public class Main extends JFrame {
                     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                     frame.setVisible(true);
                     frame.setBounds(600, 150, 900, 600);
+                     frame.setResizable(false);
                     dispose();
                  }
              });
@@ -116,6 +119,7 @@ public class Main extends JFrame {
                        frame.setVisible(true);
                       frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                       frame.setBounds(600, 150, 480, 500);
+                       frame.setResizable(false);
                       dispose();
                  }
              });
@@ -128,5 +132,6 @@ public class Main extends JFrame {
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             frame.setVisible(true);
             frame.setBounds(600, 150, 500,600);
+            frame.setResizable(false);
     }
 }
